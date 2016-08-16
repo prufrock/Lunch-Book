@@ -1,0 +1,14 @@
+{
+  "name": "Lunch-Book",
+  "version": "0.0.1",
+  "description": "Keep track of the last time your lunch with your partner, friends, business associates and enemies.",
+  "author": "David Kanenwisher <d.kanen@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta5"
+  }
+}
