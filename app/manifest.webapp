@@ -1,0 +1,25 @@
+{
+  "version": "0.0.1",
+  "name": "Lunch Book",
+  "launch_path": "/index.html",
+  "description": "Keep track of when you last had lunch with peeps.",
+  "icons": {
+    "128": "/images/touch/icon-128x128.png"
+  },
+  "developer": {
+    "name": "David Kanenwisher",
+    "url": "https://www.myriadmobile.com"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Lunch Book",
+      "description": "Keep track of when you last had lunch with peeps."
+    }
+  }
+}

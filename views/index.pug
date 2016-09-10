@@ -1,5 +1,36 @@
+doctype html
 html
   head
-    title= title
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Lunch Book
+    link(rel='stylesheet', type='text/css', href='styles/inline.css')
   body
-    h1= message
+    header.header
+      h1.header__title Lunch Book
+      button#butRefresh.headerButton
+      button#butAdd.headerButton
+    main.main()
+      .card.cardTemplate(hidden='')
+        .name
+        .date
+    .dialog-container
+      .dialog
+        .dialog-title Add new friend
+        .dialog-body
+          select#selectCityToAdd
+            option(value='austin') Austin, TX
+            option(value='boston') Boston, MA
+            option(value='chicago') Chicago, IL
+            option(value='portland') Portland, OR
+            option(value='sanfrancisco') San Francisco, CA
+            option(value='seattle') Seattle, WA
+        .dialog-buttons
+          button#butAddCity.button Add
+          button#butAddCancel.button Cancel
+    .loader
+      svg(viewbox='0 0 32 32', width='32', height='32')
+        circle#spinner(cx='16', cy='16', r='14', fill='none')
+
+    script(src='/scripts/app.js')
